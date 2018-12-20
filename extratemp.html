@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Template by Ts</title>
+	<link rel="stylesheet" type="text/css" href="extratemp.css">
+	<script type="text/javascript">
+		var temp = 1;
+		function func1() {
+			document.getElementById("home").style.opacity = "1";
+			if (temp != 1) {
+				if (temp == 2) {
+					var x = setTimeout(labartor, 750);
+					function labartor() {
+						document.getElementById("labartor").style.left ="-118%";
+					}
+					document.getElementById("labartor").style.opacity = "0";
+					var y = setTimeout(holder, 300);
+					function holder() {
+					document.getElementById("labartor").style.left = "118%";
+					document.getElementById("home").style.left = "18%";
+				}
+					var z = setTimeout(holdertwo, 1100);
+					function holdertwo() {
+						document.getElementById("home").style.transform = "scale(1)";
+					}
+					document.getElementById("labartor").style.transform = "scale(0.7)";
+					temp = 1;					
+				}
+				if (temp == 3) {
+					var x = setTimeout(contact, 750);
+					function contact() {
+						document.getElementById("contact").style.left ="-118%";
+					}
+					document.getElementById("contact").style.opacity = "0";
+					var z = setTimeout(holdertwo, 1100);
+					function holdertwo() {
+					document.getElementById("home").style.transform = "scale(1)";}
+					var y = setTimeout(holder, 300);
+					function holder() {
+					document.getElementById("home").style.left = "18%";
+					document.getElementById("contact").style.left = "118%";}
+					document.getElementById("contact").style.transform = "scale(0.7)";
+					temp = 1;
+				}
+			}
+		}
+		function func2() {
+			document.getElementById("labartor").style.opacity = "1";
+			if (temp != 2) {
+				if (temp == 1) {
+					var x = setTimeout(home, 750);
+					function home() {
+						document.getElementById("home").style.left ="-118%";
+					}
+					document.getElementById("home").style.opacity = "0";
+					document.getElementById("home").style.transform = "scale(0.7)";
+					var y = setTimeout(holder, 300);
+					function holder() {
+					document.getElementById("home").style.left = "118%";
+					document.getElementById("labartor").style.left = "18%";}
+					var z = setTimeout(holdertwo, 1100);
+					function holdertwo() {
+					document.getElementById("labartor").style.transform = "scale(1)";}
+					temp = 2;
+				}
+
+				if (temp == 3) {
+					var x = setTimeout(contact, 750);
+					function contact() {
+						document.getElementById("contact").style.left ="-118%";
+					}
+					document.getElementById("contact").style.opacity = "0";
+					var z = setTimeout(holdertwo, 1100);
+					function holdertwo() {
+					document.getElementById("labartor").style.transform = "scale(1)";}
+					var y = setTimeout(holder, 300);
+					function holder() {
+					document.getElementById("labartor").style.left = "18%";
+					document.getElementById("contact").style.left = "118%";}
+					document.getElementById("contact").style.transform = "scale(0.7)";
+					temp = 2;
+				}
+			}
+		}
+		function func3() {
+			document.getElementById("contact").style.opacity = "1";
+			if (temp != 3) {
+				if (temp == 1) {
+					var x = setTimeout(home, 750);
+					function home() {
+						document.getElementById("home").style.left ="-118%";
+					}
+					document.getElementById("home").style.opacity = "0";
+					var z = setTimeout(holdertwo, 1100);
+					function holdertwo() {
+					document.getElementById("contact").style.transform = "scale(1)";}
+					var y = setTimeout(holder, 300);
+					function holder() {
+					document.getElementById("contact").style.left = "18%";
+					document.getElementById("home").style.left = "118%";}
+					document.getElementById("home").style.transform = "scale(0.7)";
+					temp = 3;					
+				}
+				if (temp == 2) {
+					var x = setTimeout(labartor, 750);
+					function labartor() {
+						document.getElementById("labartor").style.left ="-118%";
+					}
+					document.getElementById("labartor").style.opacity = "0";
+					var z = setTimeout(holdertwo, 1100);
+					function holdertwo() {
+					document.getElementById("contact").style.transform = "scale(1)";}
+					var y = setTimeout(holder, 300);
+					function holder() {
+					document.getElementById("contact").style.left = "18%";
+					document.getElementById("labartor").style.left = "118%";}
+					document.getElementById("labartor").style.transform = "scale(0.7)";
+					temp = 3;
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+<div id="main">
+<div id="container">
+	<div id="home"><img class="pics" src="2.jpg">
+		<div class="pagecontainer"></div><div id="hometext">Welcome to my<br>website</div>
+			<p id="homepara">JavaScript and CSS are developed by Tsegtsee.</p>
+			</div>
+		<div id="labartor"><img class="pics" src="3.jpg"><div class="pagecontainer"></div><div id="hometext">Labartor Works</div>
+			</div>
+		<div id="contact"><img class="pics" src="1.jpg"><div class="pagecontainer"></div><div id="hometext">Contact me by<img class="ico" src="f.ico" id="fb"><p id="fbtxt">Г. Цэгц-Эрдэнэ</p></div>
+			</div>
+</div>
+	<div id="menu">Menu<div id="undermenu"></div>
+		<div class="buttons" id="homebtn" onclick="func1()">home<div class="underline" id="underone"></div></div>
+		<div class="buttons" id="labbtn" onclick="func2()">labartor<div class="underline" id="undertwo"></div></div>
+		<div class="buttons" id="contbtn" onclick="func3()">contact me<div class="underline" id="underthree"></div></div>
+	</div>
+</div>
+</body>
+</html>

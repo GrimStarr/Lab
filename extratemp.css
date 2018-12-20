@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Acme|Dancing+Script|Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+* {
+	padding: 0px;
+	margin: 0px;
+}
+body {
+	overflow: hidden;
+	background: #444444;
+}
+#menu {
+	width: 18%;
+	height: 1080px;
+	background: #00f2bd;
+	font-weight: bold;
+	font-family: 'Dancing Script', cursive;
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 2.5%;
+	z-index: 1;
+}
+.buttons {
+	font-family: 'Acme', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 20px;
+}
+#homebtn {
+	position: relative;
+	top: 12%;
+	transition: 1s;
+}
+#homebtn:hover {
+	letter-spacing: 7px;
+	color: white;
+	transform: scale(1.1);
+	cursor: pointer;
+}
+#homebtn:hover .underline {
+	width: 78px;
+	background: white;
+	left: 80px;
+}
+#labbtn {
+	position: relative;
+	top: 24%;
+	transition: 1s;
+}
+#labbtn:hover .underline {
+	width: 145px;
+	background: white;
+	left: 48px;
+}
+#labbtn:hover {
+	letter-spacing: 7px;
+	color: white;
+	transform: scale(1.1);
+	cursor: pointer;
+}
+#contbtn {
+	position: relative;
+	top: 36%;
+	transition: 1s;
+}
+#contbtn:hover .underline {
+	width: 175px;
+	background: white;
+	left: 32px;
+}
+#contbtn:hover {
+	letter-spacing: 7px;
+	color: white;
+	transform: scale(1.1);
+	cursor: pointer;
+}
+.underline {
+	width: 0px;
+	height: 2px;
+	background: black;
+	position: relative;
+	top: 8%;
+	left: 50%;
+	transition: 1s;
+}
+#home {
+	width: 85.5%;
+	position: absolute;
+	left: 18%;
+	height: 100%;
+	transition: 1s;
+}
+.pics {
+	width: 100%;
+	position: absolute;
+	opacity: 0.4;
+}
+.pagecontainer {
+	width: 80%;
+	height: 100%;
+	position: relative;
+	left: 10%;
+	background: white;
+	opacity: 0.3;
+}
+#hometext {
+	width: 80%;
+	position: relative;
+	left: 10%;
+	color: black;
+	text-align: center;
+	font-size: 50px;
+	top: -90%;
+	font-family: 'Righteous', cursive;
+	animation-name: blinker;
+	animation-duration: 1s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+#labartor {
+	width: 85.5%;
+	position: absolute;
+	left: -118%;
+	height: 100%;
+	transition: 1s;
+	transform: scale(0.7);
+	z-index: 0;
+}
+#contact {
+	width: 85.5%;
+	position: absolute;
+	left: -118%;
+	height: 100%;
+	transition: 1s;
+	transform: scale(0.7);
+}
+#homepara {
+	font-family: 'Acme', sans-serif;
+	position: relative;
+	left: 10%;
+	top: -80%;
+	width: 80%;
+	text-align: center;
+}
+#undermenu{
+	width: 100%;
+	height: 2px;
+	background: black;
+	position: relative;
+	top: 3%;
+	left: 0px;
+}
+.ico {
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+}
+#fb {
+	position: relative;
+	top: 150px;
+	left: -200px;
+}
+#fbtxt {
+	font-size: 18px;
+	position: relative;
+	top: 150px;
+	left: -30px;
+	font-weight: bold;
+}
+#container {
+	z-index: 0;
+}
