@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lab 3</title>
+</head>
+<style>
+	table, th, td{
+		border-collapse: collapse;
+
+	}
+</style>
+<body>
+<form>
+	<table border="1" align="center">
+  <tr>
+  	<td>First name </td>
+  	<td colspan="4"><input type="text" name="fname" style="width: 300px"></td><br>
+  </tr>
+  <tr>
+  	<td>Last name</td>
+  	<td colspan="4"> <input type="text" name="lname" style="width: 300px"></td><br>
+  </tr>
+  <tr>
+  <td>Adress</td>
+  <td colspan="4"> <input type="text" name="Adress" style="height: 70px ; width: 300px"></td><br>
+   </tr>
+  <tr>
+  	<td>City </td>
+  	<td ><input type="text" name="City" style="width: 180px">
+  	State
+  	<input type="text" name="State" style="width: 76px"><br>
+  </tr>
+  <tr>
+  <td>Zip/Postal Code</td>
+  <td colspan="4"><input type="textnumber" name="Zip,Postal Code" style="width: 300px"></td><br>
+  </tr>
+  <tr>
+  	<td>Country</td><td><select>
+  	<option value="Mongolia">Mongolia</option>
+  	<option value="Korea">Korea</option>
+  	<option value="Russia">Russia</option>
+  	<option value="USA">USA</option>
+  	<option value="China">China</option>
+  	<option value="German">German</option>
+  </select></tr>
+  <br>
+  <tr>
+<td>Phone (country code,<br>area code,number) </td>
+  	<td colspan="4">(+<input type="number" name="country code" style="width: 70px">)
+  	<input type="number" name="area code" style="width: 70px">
+    -<input type="number" name="number" style="width: 120px"></td><br>
+</tr>
+  <tr>
+  	<td>E-mail</td>
+  	<td colspan="4> <input type="text" name="E-mail" style="width: 300px"></td><br>
+  </tr>
+  <td>Birth date</td>
+  	<td colspan="4">Month<input type="number" name="country code" style="width: 30px">
+  	Day<input type="number" name="area code" style="width: 30px">
+    Year(4 digit)<input type="number" name="number" style="width: 60px"></td><br>
+</tr>
+<tr>
+  	<td>Gender</td><td><select>
+  	<option value="Male">Male</option>
+  	<option value="Female">Female</option>
+  	<option value="Other">Other</option>
+  </select></td>
+</tr>
+  	<td>Starting date </td>
+  	<td ><input type="radio" name="starting date">Spring 2018
+  		&nbsp;&nbsp;&nbsp;
+  	<input type="radio" name="starting date">Summer 2018</td>
+  </tr>
+<tr>
+  	<td>Comments/Questions </td>
+  	<td colspan="4"> <textarea type="text" name="Comments" style="height : 100px ; width: 300px"></textarea></td><br>
+
+  </tr>
+  <tr>
+  	<td colspan="4" style="text-align: center;"> <input type="Submit" value="Submit" > 
+  		<input type="reset" value="Clear This Form"> 
+  	</td>
+
+  </tr>
+    </table>
+</form>
+</body>
+</html>

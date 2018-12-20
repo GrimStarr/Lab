@@ -1,0 +1,115 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+body{
+	background: #000; 
+}
+.container{
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%
+}
+.container span{
+	text-transform: uppercase;
+	display: block;
+}
+.text1{
+	color: white;
+	font-size: 60px;
+	font-weight: 700;
+	letter-spacing: 8px;
+	margin-bottom: 20px;
+	background:black; 
+	position: relative;
+	animation: text 3s 1;
+	float: none;
+	cursor: default;
+}
+.text2{
+	position: ;
+	font-size: 30px;
+	color: #E74C3C;
+	margin-bottom: 20px;
+	background:black;
+	animation: text 4s 1;
+	cursor: default;
+	float: none;
+}
+li {
+	display: inline-block;
+	float: none;
+}
+li a{
+	text-decoration: none;
+	display: block;
+	color: #fff;
+	font-weight: lighter;
+	font-size: 
+}
+.text3::after{
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: #fff;
+	transition: width .3s
+}
+.text3:hover::after{
+	width: 100%;
+	transition: width .3s;
+
+
+}
+.text3{
+	animation: texttwo 3s 2.6s;
+	
+}
+
+@keyframes texttwo {
+	0%{
+		opacity: 0;
+	}
+
+	15%{
+		opacity: 0;
+		color: black;
+		margin-bottom: -30px;
+
+	}
+	30%{
+		opacity: 0;
+		letter-spacing: 25px;
+		margin-bottom: -30px;
+	}
+	85%{
+		opacity: 1;
+		
+	}
+	100%{
+		opacity: 1;
+	}
+
+
+}
+@keyframes text{
+	0%{
+		color: black;
+		margin-bottom: -30px;
+
+	}
+	30%{
+		letter-spacing: 25px;
+		margin-bottom: -30px;
+	}
+	85%{
+		letter-spacing: 8px;
+		margin-bottom: -30px;
+	}
+
+
+}

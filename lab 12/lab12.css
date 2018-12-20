@@ -1,0 +1,29 @@
+#container{
+	margin: auto;
+	width: 200px;
+	height: 250px;
+	background-color: green;
+}
+.button{
+	
+	text-decoration-color: white;
+	width: 35px;
+	height: 35px;
+	margin-left: 9px;
+	font-size: 20px;
+
+}
+#box{
+margin: auto;
+
+
+}
+.textview{
+	margin-bottom: 10px;
+	margin-top: 20px;
+	margin-left: 12px;
+	width: 175px;
+	height: 30px;
+	background: white;
+
+}

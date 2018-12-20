@@ -1,0 +1,65 @@
+*{
+	font-family: Georgia;
+
+}
+table {
+	width: 60%;
+
+
+}
+#header {
+	color: white;
+border-radius: 10px;
+background-color: #F5B041;
+padding: 30px 20px
+
+
+}
+.bigtext {
+	font-size: 50pt;
+	font-family: Bodoni MT Condensed;
+
+}
+.slogan {
+	font-size: 20pt;
+	font-family: Bodoni MT Condensed;
+}
+.nav{
+	padding: 20px
+
+}
+.navtext{
+   padding: 10px
+
+
+}
+#firstsidebar{
+	width: 100pt;
+	height: 180pt;
+
+	background: #3498DB;
+}
+.main{
+	padding: 5px;
+	color: white;
+	font-size: 40pt;
+	background: #DC7633;
+	font-family: Copperplate Gothic Light;
+}
+.subtext{
+	padding: 10pt
+}
+table, td{
+	padding: 10pt;
+}
+#secondsidebar{
+	background: #48C9B0;
+	width: 100pt;
+	height: 100pt;
+}
+.footer{
+	background: #717D7E;
+	padding: 9pt;
+	text-align: right;
+
+}

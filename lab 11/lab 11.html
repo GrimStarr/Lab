@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hi hehehhe</title>
+	<script type="text/javascript">
+		function myf1(y) {
+			var x=new Date();
+			document.getElementById("demo").innerHTML = x;
+		}
+
+		function myf2(y) {
+		         var str = ["Let’s write code", "Hello World!!!", "Good Morning guys"];
+		 			var n="";
+		 			var x="";
+		 			var c=""
+		         for(i=0;i<str.length;i++){
+		 
+		         	n=n+str[i].length+" ";
+		         	var x =x+str[i].charAt(6)+" ";
+		         	var arr = str[i].split(" ");
+		         c=c+arr[arr.length-1]+" ";
+		         
+		         }
+		         
+
+		         alert(n+" "+x+" "+c);
+		}
+	function myf3(y) {
+		var x = prompt("Neree bichne uu");
+		var n = prompt("Nas a bichne uu");
+    
+        document.getElementById("demo1").innerHTML =
+        "ner=" +x + " " + "nas=" + n;
+	
+}
+   function myf4(){
+    var x=document.getElementById("x").value;
+    var y=document.getElementById("y").value;
+    var z=x*y;
+document.getElementById("demo2").innerHTML = z
+   }
+   function myf5(){
+    var x=document.getElementById("x").value;
+    var y=document.getElementById("y").value;
+    var z=x/y;
+document.getElementById("demo2").innerHTML = z
+   }
+	</script>
+</head>
+<body>
+<button onclick="myf1()">Today</button>
+<p id="demo"></p>
+<button onclick="myf2()">Try it</button>
+<br>
+<br>
+<button onclick="myf3()">Enter</button>
+<p id="demo1"></p>
+<table border="2" style="border-collapse: collapse;">
+	<tr>
+		<td>1st number</td>
+		<td><input type="number" id="x"></td>
+	</tr>
+	<tr>
+		<td>2nd number</td>
+		<td><input type="number" id="y"></td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center"><button onclick="myf4()" id="mul">Multiply</button><button onclick="myf5()" id="div">Divide</button></td>
+	</tr>
+	<tr>
+		<td colspan="2">The result is:<p id="demo2"></p></td>
+	</tr>
+</table>
+</body>
+</html>

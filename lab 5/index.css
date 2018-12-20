@@ -1,0 +1,116 @@
+*{
+cursor: default;
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+font-family: Source Sans Pro;
+}
+.header{
+	padding: 10px 10px;
+	text-align: right;
+	position: fixed;
+}
+
+.menu{
+	display: inline-block;
+		margin-right:  10px;
+
+}
+.main{
+	background-image: url(back.jpg);
+background-size: 100% 500px;
+		height: 500px}
+.menu:hover{
+	color: blue;
+	cursor: pointer;
+}
+.contain{
+	position: relative;
+	top: 200px;
+	left: 300px
+}
+.bigtext{
+	font-family: 'Poppins', sans-serif;
+	font-size: 40pt;
+	display: block;
+}
+.signup{
+	text-decoration: none;
+	display: inline-block;
+	background-color: white;
+	opacity: 0.5;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	width: 130px;
+	border-radius: 3px;
+	text-align: center;
+	font-size: 12pt;
+	color: black;
+}
+.signup:hover{
+	opacity: 1
+
+}
+.nav{
+	display: inline-block;
+}
+.nav{
+	position: fixed;
+	float: left;
+
+}
+.icon{
+	height: 30px;
+	display: block;
+}
+.section{
+	display: inline-block;
+}
+.items{
+	display: inline-block;
+	width: 300px;
+	margin: 10px 10px;
+}
+.itempic{
+	height: 50px;
+	display: block;
+	position: relative;
+	float: left;
+
+}
+.section_container{
+	margin-left: 230px;
+	width: 2000px
+}
+.itemtext{
+	width: 230px;
+	display: block;
+	position: relative;
+	float: right;
+}
+.comment{
+	background-color: black;
+	height: 130px;
+	color: white;
+	text-align: center;
+	padding-top: 50px; 
+	 
+
+}
+h4{
+	font-size: 18px;
+	color: #3573ce;
+}
+.article_container{
+	margin-left: 230px;
+	margin-right: 250px;
+	width: 1000px;
+}
+.left{
+	position: relative;
+	float: left;
+	width: 450px;
+}
+.right{
+	position: relative;
+	float: right;
+	width: 450px;
+}

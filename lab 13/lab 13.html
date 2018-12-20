@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lab 13</title>
+	<link rel="stylesheet" type="text/css" href="lab13.css">
+</head>
+<body>
+	<div class="container">
+<div id="name"><p>NAME:<input type="text" id="fname"></p></div>
+<div id="date">DATE:<input type="date" id="date"></div>
+<div id="question1">
+	<h4>HTML гэж юу гэсэн үгний товчлол вэ?</h4>
+	<label><input type="radio" name="quiz1" id="1" onclick="m(1)"  value="1">Hyperlinks and Text Markup Language
+</label><br>
+	<label><input type="radio" name="quiz1" id="1" onclick="m(2)" value="2">Hyper Text Markup Language
+</label><br>
+	<label><input type="radio" name="quiz1" id="1" onclick="m(3)" value="3">Home Tool Markup Language
+</label><br>
+</div>
+<div id="question2">
+	<h4>Хэрхэн JavaScript-ийг HTML-тэй холбох вэ?</h4>
+	<label><input type="radio" name="quiz2" id="1" onclick="m(2)" value="4"><<k>script>
+</label><br>
+	<label><input type="radio" name="quiz2" id="1" onclick="m(1)" value="5"><<k>scripting>
+</label><br>
+	<label><input type="radio" name="quiz2" id="1" onclick="m(3)" value="6"><<K>javascript>
+</label><br>
+</div id="question3">
+<div><h4>CSS гэж юу гэсэн үгний товчлол вэ?</h4></div>
+<label><input type="radio" name="quiz3" id="1" onclick="m(1)" value="7">Colorful Style SheetsCascading Style Sheets</label><br>
+<label><input type="radio" name="quiz3" id="1" onclick="m(2)" value="8">Cascading Style Sheets</label><br>
+<label><input type="radio" name="quiz3" id="1" onclick="m(3)" value="9">Creative Style Sheets
+</label><br>
+<div id="question4">
+	<h4>Хэрхэн CSS-ийг HTML-тэй холбох вэ?</h4>
+	<label><input type="radio" name="quiz4" id="1" onclick="m(1)" value="10"><<k>style src="mystyle.css"></label><br>
+	<label><input type="radio" name="quiz4" id="1" onclick="m(2)" value="11"><<k>link rel="stylesheet" type="text/css" href="mystyle.css"></label><br>
+	<label><input type="radio" name="quiz4" id="1" onclick="m(3)" value="12"><<K>stylesheet>mystyle.css<<K>/stylesheet></label><br>
+</div>
+<div id="question5">
+	<h4>JavaScript-ээ HTML-ийнхээ аль хэсэгт бичих вэ?</h4>
+	<label><input type="radio" name="quiz5" id="1" onclick="m(2)" value="13">body дотор</label><br>
+	<label><input type="radio" name="quiz5" id="1" onclick="m(1)" value="14">HTML-ийн төгсгөлд</label><br>
+	<label><input type="radio" name="quiz5" id="1" onclick="m(3)" value="15">head дотор</label><br><br>	
+</div>
+<div>
+	<button onclick ="submit()">SUBMIT</button>
+</div>
+</div>
+<script type="text/javascript">
+	var k = 0;
+	var date= new Date();
+	function submit() {
+    var name = document.getElementById('fname').value;
+    var year = date.getFullYear();
+    var month = 11;
+    var day = date.getDate();
+
+    alert("onoo ="+k + " "+" "+"date= "+month+"/"+day+"/"+year+ " "+"  " +"ner = "+name);
+	}
+	function m(id) {
+		if (id == 2) {
+			k=k+1;
+	}
+}
+</script>
+</body>
+</html>

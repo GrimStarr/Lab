@@ -1,0 +1,115 @@
+*{
+	color: white;
+	text-align: center;
+	transition: all .2s ease-in-out;
+	font-family: helvetica, serif;
+	font-size: 15pt;
+	line-height: 65px;
+	z-index: 1;
+	cursor: default;
+
+}
+#container{
+	display: flex;
+	width: 100%;
+	height: 200px;
+	align-items: center;
+	justify-content: space-around;
+	position: relative;
+
+
+}
+.Fade{
+
+background-color:#6F6B6A;
+width: 150px;
+height: 70px;
+opacity: 0.5;
+transition: all 0.5s ease-in-out;
+
+}
+.Fade:hover{
+	opacity: 1;
+}
+.Color{
+background-color:#6F6B6A;
+width: 150px;
+height: 70px;
+transition: all .5s ease-in-out;
+}
+.Color:hover{
+	color: black
+}
+.Grow{
+background-color:#6F6B6A;
+width: 150px;
+height: 70px;
+
+}
+.Grow:hover { 
+	transform: scale(2); 
+}
+.Shrink{
+background-color:#6F6B6A;
+width: 150px;
+height: 70px;
+}
+.Shrink:hover{
+	transform: scale(0.7);
+}
+.Rotate{
+background-color:#6F6B6A;
+width: 150px;
+height: 70px;
+}
+.Rotate:hover{
+	transform: rotate(-45deg);
+}
+.Click{
+background-color:white;
+color: #6F6B6A;
+border: solid;
+border-color: #6F6B6A;
+width: 150px;
+height: 66px;
+
+}
+.back{
+	float: left;
+	background: #6F6B6A;
+	width: 0px;
+	height: 66px;
+	top:67px;
+	position: absolute;
+	z-index: -1;
+	opacity: ;
+
+}
+span{
+	z-index: 9999;
+	color: #6F6B6A;
+}
+span:hover + .back{
+	width: 150px;
+	height: 66px;
+}
+.Click > span:hover {
+	color:white;
+}
+.nice{
+	 background-image: radial-gradient(red,orange,yellow,green,blue,indigo,violet); 
+	 width: 100px;
+	 height:100px;
+	animation: move 5s infinite;
+}
+@keyframes move{
+	0% {
+		border-radius: 0 0 0 0;
+	}
+	50%{
+		border-radius: 100px 100px 100px 100px
+	}
+	100%{
+		border-radius: 0 0 0 0;
+	}
+}
