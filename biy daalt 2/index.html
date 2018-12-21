@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>memory game</title>
+	<link rel="stylesheet" type="text/css" href="bdaalt.css">
+</head>
+<body>
+	<div class="container">
+	<section class="memory-game">
+		<div class="memory-card" data-framework="pepsi">
+			<img class="front-face" src="https://brandmark.io/logo-rank/random/pepsi.png" alt="pepsi">
+			<img class="back-face" src="https://brandmark.io/logo-rank/random/bp.png" alt="bp">
+		</div>
+        <div class="memory-card" data-framework="pepsi">
+			<img class="front-face" src="https://brandmark.io/logo-rank/random/pepsi.png" alt="pepsi">
+			<img class="back-face" src="https://brandmark.io/logo-rank/random/bp.png" alt="bp">
+		</div>
+		<div class="memory-card" data-framework="snap">
+			<img class="front-face" src="https://brandmark.io/logo-rank/random/snap.png" alt="snap">
+			<img class="back-face" src="https://brandmark.io/logo-rank/random/bp.png" alt="bp">
+		</div>
+        <div class="memory-card" data-framework="snap">
+			<img class="front-face" src="https://brandmark.io/logo-rank/random/snap.png" alt="snap">
+			<img class="back-face" src="https://brandmark.io/logo-rank/random/bp.png" alt="bp">
+		</div>
+		<div class="memory-card" data-framework="beats">
+			<img class="front-face" src="https://brandmark.io/logo-rank/random/beats.png" alt="beats">
+			<img class="back-face" src="https://brandmark.io/logo-rank/random/bp.png" alt="bp">
+		</div>
+        <div class="memory-card" data-framework="beats">
+			<img class="front-face" src="https://brandmark.io/logo-rank/random/beats.png" alt="beats">
+			<img class="back-face" src="https://brandmark.io/logo-rank/random/bp.png" alt="bp">
+		</div>
+		<div class="memory-card" data-framework="apple">
+			<img class="front-face" src="https://brandmark.io/logo-rank/random/apple.png" alt="apple">
+			<img class="back-face" src="https://brandmark.io/logo-rank/random/bp.png" alt="bp">
+		</div>
+        <div class="memory-card" data-framework="apple">
+			<img class="front-face" src="https://brandmark.io/logo-rank/random/apple.png" alt="apple">
+			<img class="back-face" src="https://brandmark.io/logo-rank/random/bp.png" alt="bp">
+		</div>
+		<div class="memory-card" data-framework="twitter">
+			<img class="front-face" src="https://brandmark.io/logo-rank/random/twitter.png" alt="twitter">
+			<img class="back-face" src="https://brandmark.io/logo-rank/random/bp.png" alt="bp">
+		</div>
+        <div class="memory-card" data-framework="twitter">
+			<img class="front-face" src="https://brandmark.io/logo-rank/random/twitter.png" alt="twitter">
+			<img class="back-face" src="https://brandmark.io/logo-rank/random/bp.png" alt="bp">
+		</div>
+		<div class="memory-card" data-framework="avengers">
+			<img class="front-face" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGDAKzrbKI20pR3TvQg-6HdsTgFS6F_Xx2RfVgDPhlXwu9g6nr" alt="avengers">
+			<img class="back-face" src="https://brandmark.io/logo-rank/random/bp.png" alt="bp">
+		</div>
+        <div class="memory-card" data-framework="avengers">
+			<img class="front-face" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGDAKzrbKI20pR3TvQg-6HdsTgFS6F_Xx2RfVgDPhlXwu9g6nr" alt="avengers">
+			<img class="back-face" src="https://brandmark.io/logo-rank/random/bp.png" alt="bp">
+		</div>
+		<div class="memory-card" data-framework="ups">
+			<img class="front-face" src="https://brandmark.io/logo-rank/random/ups.png" alt="ups">
+			<img class="back-face" src="https://brandmark.io/logo-rank/random/bp.png" alt="bp">
+		</div>
+        <div class="memory-card"data-framework="ups" >
+			<img class="front-face" src="https://brandmark.io/logo-rank/random/ups.png" alt="ups">
+			<img class="back-face" src="https://brandmark.io/logo-rank/random/bp.png" alt="bp">
+		</div>
+		<div class="memory-card" data-framework="rolex">
+			<img class="front-face" src="https://brandmark.io/logo-rank/random/rolex.png" alt="rolex">
+			<img class="back-face" src="https://brandmark.io/logo-rank/random/bp.png" alt="bp">
+		</div>
+        <div class="memory-card" data-framework="rolex">
+			<img class="front-face" src="https://brandmark.io/logo-rank/random/rolex.png" alt="rolex">
+			<img class="back-face" src="https://brandmark.io/logo-rank/random/bp.png" alt="bp">
+		</div>
+		
+	</section>
+<div id="stopwatch" class="stopwatch">
+	<h1><p id="output" class="output"><b>00:00:00</b></p></h1>
+	<div id="congrats">
+	<h1>Congratulations</h1>
+	<p>You scored</p>
+</div>
+</div>
+
+
+    <div class="btn_group">
+    <a href="#" class="btn_two">
+        <span id="reset" class="btntwo" onclick="reset()"><b id="reset">Reset</b></span>
+        <div id="btn_bg" class="btn_bg">
+        </div></a>
+    <a href="#" id="StartPause" onclick="startPause()" class="btn_one"><b id="start">Start</b></a>
+</div>
+<div class="blocker">
+</div>
+<div id="firework1">
+	<img  src="https://media3.giphy.com/media/XHTUbPbChULuM/giphy.gif?cid=3640f6095bfe8d855a6e7263776037bf">
+</div>
+	<div id="firework2">
+	<img  src="https://media3.giphy.com/media/XHTUbPbChULuM/giphy.gif?cid=3640f6095bfe8d855a6e7263776037bf">
+</div>
+<div id="con">
+<span id="cong"></span>
+<span id="cong"></span>
+<span id="cong"></span>
+<span id="cong"></span>
+<span id="cong"></span>
+<span id="cong"></span>
+<span id="cong"></span>
+<span id="cong"></span>
+<span id="cong"></span>
+<span id="cong"></span>
+<span id="cong"></span>
+<span id="cong"></span>
+<span id="cong"></span>
+<img class="cup1" id="cup1" src="https://dl.dropboxusercontent.com/s/e1t2hhowjcrs7f5/100daysui_100icon.png">
+<h2><br></h2>
+<img class="cup2" id="cup2" src="https://dl.dropboxusercontent.com/s/e1t2hhowjcrs7f5/100daysui_100icon.png">
+<span id="cong"></span>
+<span id="cong"></span>
+<span id="cong"></span>
+<span id="cong"></span>
+<span id="cong"></span>
+<span id="cong"></span>
+<span id="cong"></span>
+<span id="cong"></span>
+<span id="cong"></span>
+<span id="cong"></span>
+<span id="cong"></span>
+<span id="cong"></span>
+<span id="cong"></span>
+
+</div>
+</div>
+<script src="bdaalt.js"></script>
+</body>
+</html>
