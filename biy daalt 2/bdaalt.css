@@ -222,7 +222,7 @@ span:hover +.btn_bg{
     position: absolute;
     top:200px;
     right: -38px;
-    opacity: 0;
+    opacity: 1;
     transition-delay: 3s;
     transition: 5s;
 }
