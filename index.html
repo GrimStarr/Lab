@@ -6,6 +6,10 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script type="text/javascript">
 		var temp = 1;
+		function getQR(){
+		let codes = new URLSearchParams(window.location.search);
+                document.getElementById("qr").innerHTML = codes.get("qrcode");       
+		}
 		function func1() {
 			document.getElementById("home").style.opacity = "1";
 			if (temp != 1) {
@@ -127,7 +131,7 @@
 <div id="container">
 	<div id="home"><img class="pics" src="2.jpg">
 		<div class="pagecontainer"></div><div id="hometext">Welcome to my<br>website</div>
-			<p id="homepara">JavaScript and CSS are developed by Tsegtsee.<br><br><br><b>Судалгаа бөглөх</b></p>
+			<p id="homepara">JavaScript and CSS are developed by Tsegtsee.<br><br><br><b id="qr">Судалгаа бөглөх</b></p><br><button onclick="getQR">get qr</button>
 	
 			</div>
 		<div id="labartor"><img class="pics" src="3.jpg"><div class="pagecontainer"></div><div id="hometext">Labartor Works <table>
